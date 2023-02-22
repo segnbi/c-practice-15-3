@@ -35,7 +35,7 @@ FILE* load_dictionary(char* path) {
   FILE* dictionary_addr = fopen(path, "r");
 
   if(dictionary_addr == NULL) {
-    puts("Erreur d'ouverture de fichier");
+    printf("Error: unable to load %s", path);
     exit(1);
   }
 
